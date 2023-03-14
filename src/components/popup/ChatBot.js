@@ -34,12 +34,12 @@ const ChatBot = () => {
     {
       id: '1',
       type: 'bot',
-      text: 'Hola estoy hecho con ChatGPT, un placer charlar contigo!  👋'
+      text: 'Hola estoy hecho con ChatGPT, un placer hablar contigo!  👋'
     },
     {
       id: '2',
       type: 'bot',
-      text: 'Puedes hacerme cualquier pregunta sobre de mi para conocerme'
+      text: 'Puedes hacerme cualquier pregunta sobre mi, para conocerme'
     }
   ])
   const [inputText, setInputText] = useState('')
