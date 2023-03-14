@@ -39,7 +39,7 @@ const ChatBot = () => {
     {
       id: '2',
       type: 'bot',
-      text: 'Puedes hacerme cualquier pregunta sobre mi, para conocerme'
+      text: 'Puedes hacerme cualquier pregunta sobre mi para conocerme.'
     }
   ])
   const [inputText, setInputText] = useState('')
