@@ -18,6 +18,17 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>Enzo Saso | Inicio</title>
+        <meta
+          name='description'
+          content='¡Hola! 👋 Soy Enzo Saso, Frontend Developer con más de 4 años de experiencia en el desarrollo de sitios web y aplicaciones. Me apasiona crear soluciones creativas y de alto rendimiento utilizando las últimas tecnologías.'
+          key='desc'
+        />
+        <meta property='og:title' content='Portafolio de Enzo Saso' />
+        <meta
+          property='og:description'
+          content='¡Hola! 👋 Soy Enzo Saso, Frontend Developer con más de 4 años de experiencia en el desarrollo de sitios web y aplicaciones. Me apasiona crear soluciones creativas y de alto rendimiento utilizando las últimas tecnologías.'
+        />
+        <meta property='og:image' content='https://portfolio.enzosaso.com/img/og-prev.jpg' />
       </Head>
       <PreLoader />
       <ImageView />

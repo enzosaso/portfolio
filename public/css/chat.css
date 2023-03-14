@@ -73,7 +73,6 @@ html {
 
 .chat-contact .info {
     display: flex;
-    width: 273px;
     justify-content: space-between;
 }
 
@@ -303,8 +302,4 @@ html {
         transform: translate(0, -0.25rem) scale(1);
         opacity: 1;
     }
-}
-
-.pic.bot {
-    background-image: url("../img/contact/me.jpeg");
 }
