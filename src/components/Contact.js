@@ -7,7 +7,7 @@ const Contact = () => {
         <div className='container'>
           <div className='infobox'>
             <div className='video_button'>
-              <a className='popup-youtube' href='https://www.youtube.com/watch?v=7e90gBu4pas'>
+              <a className='popup-youtube' href='https://www.youtube.com/'>
                 <img className='anim_circle' src='img/contact/video.png' alt='' />
                 <img className='svg' src='img/svg/play.svg' alt='' />
               </a>
