@@ -141,7 +141,7 @@ const ChatBot = () => {
     <div className={`center ${isOpen ? 'open' : ''}`}>
       <div className='chat'>
         <div className='chat-contact bar'>
-          <div className='pic bot'></div>
+          <img className='pic bot' src='/img/contact/me.jpeg' alt='' />
           <div className='info'>
             <div>
               <span className='name'>Enzo Saso</span>
