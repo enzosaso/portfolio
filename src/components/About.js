@@ -21,9 +21,9 @@ const About = () => {
             </div>
             <div className='text'>
               <p>
-                Con +4 años de experiencia como desarrollador web profesional, he adquirido las habilidades y
-                conocimientos necesarios para que cualquier proyecto sea un éxito. Disfruto cada paso de un proyecto,
-                desde la discusión y la colaboración.
+                Como desarrollador web profesional, he adquirido las habilidades y conocimientos necesarios para que
+                cualquier proyecto sea un éxito. Disfruto cada paso de un proyecto, desde la discusión y la
+                colaboración.
               </p>
             </div>
             <div className='short'>
