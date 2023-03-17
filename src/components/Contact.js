@@ -17,11 +17,7 @@ const Contact = () => {
               <p>Estoy listo para aportar mi experiencia y habilidades a tu equipo. ¿Comenzamos?</p>
             </div>
             <div className='boxed_button'>
-              <a
-                href='https://api.whatsapp.com/send/?phone=5492604632048&text=Hola+Enzo&type=phone_number&app_absent=0'
-                target='_blank'
-                rel='noreferrer'
-              >
+              <a href='mailto:hola@enzosaso.com'>
                 Di Hola <img className='svg' src='img/svg/send.svg' alt='' />
               </a>
             </div>

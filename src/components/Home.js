@@ -20,12 +20,7 @@ const Home = ({ dark }) => {
             </div>
             <div className='buttons'>
               <div className='boxed_button'>
-                <a
-                  className='anchor'
-                  href='https://api.whatsapp.com/send/?phone=5492604632048&text=Hola+Enzo&type=phone_number&app_absent=0'
-                  target='_blank'
-                  rel='noreferrer'
-                >
+                <a className='anchor' href='mailto:hola@enzosaso.com'>
                   Di Hola <img className='svg' src='img/svg/send.svg' alt='' />
                 </a>
               </div>
