@@ -10,7 +10,7 @@ const CopyRight = () => {
             <div className='copy'>
               <p>
                 © {new Date().getFullYear()} by{' '}
-                <a href='https://themeforest.net/user/codeefly' target='_blank' rel='noreferrer'>
+                <a href='https://enzosaso.com/' target='_blank' rel='noreferrer'>
                   EnzoSaso.
                 </a>{' '}
                 All Rights Reserved
