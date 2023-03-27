@@ -10,12 +10,12 @@ const counts = [
 ]
 
 const skills = [
-  { name: 'ReactJS', value: '90', icon: 'img/svg/react.svg' },
-  { name: 'NextJS', value: '80', icon: 'img/svg/nextjs.svg' },
-  { name: 'NodeJS', value: '80', icon: 'img/svg/javascript.svg' },
-  { name: 'TypeScript', value: '80', icon: 'img/svg/typescript.svg' },
-  { name: 'GraphQL', value: '85', icon: 'img/svg/graphql.svg' },
-  { name: 'WordPress', value: '95', icon: 'img/svg/wordpress.svg' }
+  { name: 'ReactJS', icon: 'img/svg/react.svg' },
+  { name: 'NextJS', icon: 'img/svg/nextjs.svg' },
+  { name: 'NodeJS', icon: 'img/svg/javascript.svg' },
+  { name: 'TypeScript', icon: 'img/svg/typescript.svg' },
+  { name: 'GraphQL', icon: 'img/svg/graphql.svg' },
+  { name: 'WordPress', icon: 'img/svg/wordpress.svg' }
 ]
 
 const experiences = [
@@ -101,9 +101,7 @@ const ExpertAreas = () => {
                                   <img className='svg' src={skill.icon} alt='' />
                                 </span>
                               </span>
-                              <p className='name'>
-                                {skill.name} <span>({skill.value}%)</span>
-                              </p>
+                              <p className='name'>{skill.name}</p>
                             </div>
                           </li>
                         ))}
