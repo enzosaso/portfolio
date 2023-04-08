@@ -1,4 +1,4 @@
-import { RRSS_LINKS } from '../constants'
+import { RRSS_LINKS, VIDEO_INTRO } from '../constants'
 
 const Home = ({ dark }) => {
   return (
@@ -62,7 +62,7 @@ const Home = ({ dark }) => {
         <div className='img'>
           <img src={`img/hero/${dark ? 2 : 1}.png`} alt='' />
           <div className='video_button'>
-            <a className='popup-youtube' href='https://www.youtube.com/'>
+            <a className='popup-youtube' href={VIDEO_INTRO}>
               <img className='anim_circle' src='img/hero/welcome.png' alt='' />
               <img className='svg' src='img/svg/play.svg' alt='' />
             </a>

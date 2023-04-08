@@ -16,7 +16,7 @@ const VideoPopup_ = ({ close, videoID }) => {
       >
         <div className='mfp-container mfp-s-ready mfp-iframe-holder'>
           <div className='mfp-content' ref={domNode}>
-            {/* <div className='mfp-iframe-scaler'>
+            <div className='mfp-iframe-scaler'>
               <button title='Close (Esc)' type='button' className='mfp-close' onClick={() => close()}>
                 ×
               </button>
@@ -27,8 +27,8 @@ const VideoPopup_ = ({ close, videoID }) => {
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                 allowFullScreen
               ></iframe>
-            </div> */}
-            <div
+            </div>
+            {/* <div
               style={{
                 display: 'flex',
                 justifyContent: 'center'
@@ -43,7 +43,7 @@ const VideoPopup_ = ({ close, videoID }) => {
               >
                 Próximamente video presentación...
               </h1>
-            </div>
+            </div> */}
           </div>
           <div className='mfp-preloader'>Cargando...</div>
         </div>

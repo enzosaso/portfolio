@@ -9,7 +9,7 @@ const Popup = ({ open, close, children }) => {
     <div className={`modalbox ${open ? 'opened' : ''}`}>
       <div className='box_inner' ref={domNode}>
         <div className='close'>
-          <a className='c-pointer' onClick={() => close()}>
+          <a className='c-pointer' onClick={close}>
             <i className='icon-cancel' />
           </a>
         </div>

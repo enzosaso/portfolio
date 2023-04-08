@@ -1,4 +1,4 @@
-import { RRSS_LINKS } from '../constants'
+import { RRSS_LINKS, VIDEO_INTRO } from '../constants'
 
 const Contact = () => {
   return (
@@ -7,7 +7,7 @@ const Contact = () => {
         <div className='container'>
           <div className='infobox'>
             <div className='video_button'>
-              <a className='popup-youtube' href='https://www.youtube.com/'>
+              <a className='popup-youtube' href={VIDEO_INTRO}>
                 <img className='anim_circle' src='img/contact/video.png' alt='' />
                 <img className='svg' src='img/svg/play.svg' alt='' />
               </a>
