@@ -3,9 +3,9 @@ import { filterHashtag } from '../utilits'
 import Counter from './Counter'
 
 const counts = [
-  { name: 'Desafios', value: 23 },
+  { name: 'Desafios', value: 24 },
   { name: 'Contribuciones ', value: 318 },
-  { name: 'Proyecto grande', value: 1 },
+  { name: 'Proyectos grandes', value: 2 },
   { name: 'Cafés', value: 527 }
 ]
 
