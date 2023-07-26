@@ -12,8 +12,7 @@ const CopyRight = () => {
                 © {new Date().getFullYear()} by{' '}
                 <a href='https://enzosaso.com/' target='_blank' rel='noreferrer'>
                   EnzoSaso.
-                </a>{' '}
-                All Rights Reserved
+                </a>
               </p>
             </div>
           </div>
