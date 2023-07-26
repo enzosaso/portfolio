@@ -14,8 +14,8 @@ const Home = ({ dark }) => {
             </div>
             <div className='text'>
               <p>
-                Con más de 4 años de experiencia y más de 20 sitios web, construí un e-commerce completo y lideré
-                proyectos complejos. Buscando nuevos desafíos.
+                Con más de 4 años de experiencia, he desarrollado más de 20 proyectos completando todas sus fases,
+                utilizando metodologías ágiles y las mejores prácticas de desarrollo.
               </p>
             </div>
             <div className='buttons'>

@@ -798,16 +798,17 @@ h6 {
   display: inline-block;
 }
 .about .name {
-  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 65px;
   color: #207EDE;
   font-weight: 700;
   letter-spacing: -4px;
   line-height: 1;
   text-transform: uppercase;
   position: absolute;
-  bottom: -30px;
-  left: -20px;
-  width: 300%;
+  bottom: -12px;
 }
 .about .right {
   width: 50%;
@@ -2710,17 +2711,16 @@ h6 {
   }
   .about .left .year {
     font-size: 330px;
-    margin-top: -85px;
+    margin-top: -47px;
   }
   .about .experience {
-    padding-left: 40px;
     font-size: 18px;
     margin-top: 3px;
   }
   .about .name {
     font-size: 55px;
-    left: -10px;
-    bottom: -20px;
+    left: 0;
+    bottom: -10px;
   }
   .about .left .box {
     padding-bottom: 70px;
@@ -3012,8 +3012,8 @@ h6 {
   }
   .about .name {
     font-size: 47px;
-    left: -12px;
-    bottom: -16px;
+    left: 0;
+    bottom: -11px;
   }
   .about .short img {
     max-width: 115px;

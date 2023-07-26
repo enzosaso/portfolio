@@ -21,9 +21,10 @@ const About = () => {
             </div>
             <div className='text'>
               <p>
-                Como desarrollador web profesional, he adquirido las habilidades y conocimientos necesarios para que
-                cualquier proyecto sea un éxito. Disfruto cada paso de un proyecto, desde la discusión y la
-                colaboración.
+                Me gusta sentirme dueño de los proyectos en los que trabajo y no solo escribir código mantenible y
+                escalable, sino también tener una visión crítica del producto, las funcionalidades y el negocio. Siempre
+                busco soluciones creativas e innovadoras para mejorar la experiencia del usuario y la calidad del
+                producto.
               </p>
             </div>
             <div className='short'>

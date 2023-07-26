@@ -53,10 +53,11 @@ const ExpertAreas = () => {
                 </div>
                 <div className='text'>
                   <p>
-                    Como desarrollador frontend, mis áreas de especialización incluyen HTML, CSS, JavaScript y
-                    frameworks como React. Tengo experiencia en la creación de interfaces de usuario responsives y
-                    accesibles, la optimización del rendimiento del sitio web y la integración con las API. Tengo una
-                    sólida comprensión de los principios de diseño web y las mejores prácticas de UX/UI.
+                    Tengo experiencia en la creación de interfaces de usuario responsives y accesibles, la optimización
+                    del rendimiento del sitio web (WPO), la integración con APIs y SEO. Tengo una sólida comprensión de
+                    los principios de diseño web y las mejores prácticas de UX/UI. También tengo experiencia en Extreme
+                    Programming (XP) y sus prácticas como Test Driven Development (TDD), Pair Programming, Code
+                    Refactoring, CI/CD, etc.
                   </p>
                 </div>
                 <div className='boxed_button'>
