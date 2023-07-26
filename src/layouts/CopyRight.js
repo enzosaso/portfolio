@@ -9,7 +9,7 @@ const CopyRight = () => {
             </div>
             <div className='copy'>
               <p>
-                © {new Date().getFullYear()} by{' '}
+                Made by{' '}
                 <a href='https://enzosaso.com/' target='_blank' rel='noreferrer'>
                   EnzoSaso.
                 </a>
