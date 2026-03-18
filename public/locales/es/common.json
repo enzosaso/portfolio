@@ -155,5 +155,13 @@
   },
   "footer": {
     "madeBy": "Made by"
+  },
+  "chatbot": {
+    "greeting": "¡Hola! Soy {name}, {role}. 👋",
+    "welcome": "Pregúntame sobre mi experiencia, proyectos técnicos o habilidades. ¡Estoy aquí para conversar!",
+    "placeholder": "Pregúntame sobre mis proyectos o habilidades...",
+    "typing": "Escribiendo...",
+    "error": "Lo siento, tuve un problema al responder. ¿Podemos intentarlo de nuevo?",
+    "send": "Enviar"
   }
 }

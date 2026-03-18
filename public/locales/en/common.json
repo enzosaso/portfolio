@@ -182,5 +182,13 @@
   },
   "footer": {
     "madeBy": "Made by"
+  },
+  "chatbot": {
+    "greeting": "Hi! I'm {name}, {role}. 👋",
+    "welcome": "Ask me about my experience, technical projects, or skills. I'm here to chat!",
+    "placeholder": "Ask me about my projects or skills...",
+    "typing": "Typing...",
+    "error": "Sorry, I had trouble responding. Can we try again?",
+    "send": "Send"
   }
 }

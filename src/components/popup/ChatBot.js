@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from 'react'
 import { useOpen } from '../../hooks/useOpen'
 import { getChatGPT } from '../../services/getChatGPT'
+import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
 
 const SendMessageIcon = () => {
   return (
@@ -23,26 +25,32 @@ const SendMessageIcon = () => {
   )
 }
 
-const DEFAULT_CONVERSATION = [
-  {
-    id: '1',
-    type: 'bot',
-    text: '¡Hola! Soy Enzo Saso, programador fullstack. 👋'
-  },
-  {
-    id: '2',
-    type: 'bot',
-    text: 'Pregúntame sobre mi experiencia, proyectos técnicos o habilidades. ¡Estoy aquí para conversar!'
-  }
-]
-
 const ChatBot = () => {
-  const [messages, setMessages] = useState(DEFAULT_CONVERSATION)
+  const { t } = useTranslation('common')
+  const [messages, setMessages] = useState([])
   const [inputText, setInputText] = useState('')
   const [loading, setLoading] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const container = useRef()
   useOpen(setIsOpen)
+
+  // Initialize messages with i18n when component mounts
+  useEffect(() => {
+    const greeting = t('chatbot.greeting').replace('{name}', t('home.name')).replace('{role}', t('home.role'))
+
+    setMessages([
+      {
+        id: '1',
+        type: 'bot',
+        text: greeting
+      },
+      {
+        id: '2',
+        type: 'bot',
+        text: t('chatbot.welcome')
+      }
+    ])
+  }, [t])
 
   useEffect(() => {
     container.current?.scrollTo(0, container.current.scrollHeight)
@@ -81,7 +89,7 @@ const ChatBot = () => {
           {
             id: String(Date.now()),
             type: 'bot',
-            text: 'Lo siento, tuve un problema al responder. ¿Podemos intentarlo de nuevo?'
+            text: t('chatbot.error')
           }
         ])
       })
@@ -156,7 +164,7 @@ const ChatBot = () => {
         </div>
         <form className='input' onSubmit={handleSubmit}>
           <input
-            placeholder='Pregúntame sobre mis proyectos o habilidades...'
+            placeholder={t('chatbot.placeholder')}
             type='text'
             value={inputText}
             onChange={e => setInputText(e.target.value)}
