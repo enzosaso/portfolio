@@ -27,12 +27,12 @@ const DEFAULT_CONVERSATION = [
   {
     id: '1',
     type: 'bot',
-    text: 'Hola estoy hecho con ChatGPT, un placer hablar contigo!  👋'
+    text: '¡Hola! Soy Enzo Saso, programador fullstack. 👋'
   },
   {
     id: '2',
     type: 'bot',
-    text: 'Puedes hacerme cualquier pregunta sobre mi para conocerme.'
+    text: 'Pregúntame sobre mi experiencia, proyectos técnicos o habilidades. ¡Estoy aquí para conversar!'
   }
 ]
 
@@ -53,17 +53,37 @@ const ChatBot = () => {
     if (!inputText || loading) return
 
     setLoading(true)
+    const userMessage = {
+      id: String(Date.now()),
+      type: 'user',
+      text: inputText
+    }
+
     setInputText('')
-    setMessages(messages =>
-      messages.concat({
-        id: String(Date.now()),
-        type: 'user',
-        text: inputText
-      })
-    )
-    getChatGPT(inputText)
+    setMessages(prev => [...prev, userMessage])
+
+    // Prepare conversation history for API
+    const conversationHistory = messages
+      .slice(-6) // Keep last 6 messages for context
+      .map(msg => ({
+        role: msg.type === 'user' ? 'user' : 'assistant',
+        content: msg.text
+      }))
+
+    getChatGPT(inputText, conversationHistory)
       .then(response => {
-        setMessages(messages => messages.concat(response))
+        setMessages(prev => [...prev, response])
+      })
+      .catch(error => {
+        console.error('Error in chat:', error)
+        setMessages(prev => [
+          ...prev,
+          {
+            id: String(Date.now()),
+            type: 'bot',
+            text: 'Lo siento, tuve un problema al responder. ¿Podemos intentarlo de nuevo?'
+          }
+        ])
       })
       .finally(() => setLoading(false))
   }
@@ -136,12 +156,18 @@ const ChatBot = () => {
         </div>
         <form className='input' onSubmit={handleSubmit}>
           <input
-            placeholder='Hazme una pregunta'
+            placeholder='Pregúntame sobre mis proyectos o habilidades...'
             type='text'
             value={inputText}
             onChange={e => setInputText(e.target.value)}
+            onKeyDown={e => {
+              if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault()
+                handleSubmit(e)
+              }
+            }}
           />
-          <button disabled={loading} type='sumbit' className={`send-btn ${loading ? 'disabled' : ''}`}>
+          <button disabled={loading} type='submit' className={`send-btn ${loading ? 'disabled' : ''}`}>
             <SendMessageIcon />
           </button>
         </form>
