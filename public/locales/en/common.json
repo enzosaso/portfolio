@@ -65,10 +65,87 @@
   },
   "projects": {
     "title": "Some of my projects",
-    "viewProject": "View Project",
+    "viewProject": "Go to website",
     "client": "Client",
     "category": "Category",
-    "stack": "Stack"
+    "stack": "Stack",
+    "data": [
+      {
+        "id": "1",
+        "imageSrc": "img/portfolio/3.webp",
+        "title": "Acordeavos",
+        "description": [
+          "I had the opportunity to lead the development of a complete eCommerce from scratch for a client who required complex and customized functionalities. For this project, we used advanced technologies like Next.js for the online store, React.js for the admin panel, Redux for state management, GraphQL and Apollo for communication with the Firebase database.",
+          "The project objective was to create an ecommerce that offered a fluid and personalized shopping experience for users, with advanced features like bulk edition, invoice upload that updates stock, customized customer contact options, reports, product page with variants and role-based pricing, shopping cart with discount coupons, customized payment methods, and many other features.",
+          "As the main developer, I worked to carry out the project. We used Next.js for building the online store, React.js for the admin panel, Redux for state management, and GraphQL and Apollo for communication with the Firebase database.",
+          "Later we implemented Harness Engineering to generate a continuous development flow in which only AI is capable of generating code meeting quality standards."
+        ],
+        "stack": "NextJS, ReactJS, GraphQL, Apollo, Redux, NodeJS, Firebase",
+        "category": "Ecommerce",
+        "client": "Acordeavos",
+        "url": "https://acordeavos.com/",
+        "gallery": []
+      },
+      {
+        "id": "2",
+        "imageSrc": "img/portfolio/1.webp",
+        "title": "ShopYA - Marketplace SaaS",
+        "description": [
+          "Marketplace platform for small entrepreneurs in Argentina with subscription model.",
+          "**Architecture & Development:**",
+          "• Designed and developed complete system architecture (Next.js + NestJS + Firestore)",
+          "• Implemented SaaS business model with subscription plans",
+          "• Created multi-store system with product, order management and integrated messaging",
+          "",
+          "**Implemented Features:**",
+          "• Multi-vendor marketplace with automated approval process",
+          "• Recurring subscription system and plan limit management",
+          "• Integration with shipping providers (Andreani, OCA) and flexible configuration",
+          "• Direct customer-vendor communication via platform-native messaging",
+          "• Analytics dashboard for sellers with real-time sales metrics",
+          "",
+          "**Impact:**",
+          "• Scalable platform supporting multiple stores without sales commissions",
+          "• SaaS model generating predictable recurring revenue",
+          "• Enabled hundreds of entrepreneurs to digitize their businesses with low entry cost",
+          "",
+          "**Technologies:** Next.js, NestJS, Firestore, TypeScript, Microservices Architecture"
+        ],
+        "stack": "Next.js, NestJS, PostgreSQL, TypeScript",
+        "category": "SaaS Marketplace",
+        "client": "ShopYA",
+        "url": "https://shopya.com.ar/",
+        "gallery": []
+      },
+      {
+        "id": "3",
+        "imageSrc": "img/portfolio/4.webp",
+        "title": "Metro Cuadrado",
+        "description": [
+          "Website generator of budgets through downloadable PDFs, with data persistence in local storage and in db through users.",
+          "For the site development, we used Next.js. We also integrated Mercado Pago API for charging recurring subscriptions.",
+          "This application was 100% vibe coded, has more than 1000 active users and 6 months after its launch, no critical bugs reported, only improvements."
+        ],
+        "stack": "NextJS",
+        "category": "Website",
+        "client": "Architect Gustavo Quisbert",
+        "url": "https://metro-cuadrado-bice.vercel.app/",
+        "gallery": []
+      },
+      {
+        "id": "4",
+        "imageSrc": "img/portfolio/2.webp",
+        "title": "NyG Car Detailing",
+        "description": [
+          "Website with landing page for vehicle detailing workshop which allows users to schedule appointments and the business owner to have a dashboard with important information as well as possibility to configure schedules and view scheduled appointments with multiple views and possibility to perform actions."
+        ],
+        "stack": "NextJS",
+        "category": "Ecommerce",
+        "client": "Nelson de NyG Car Detailing",
+        "url": "https://car-detail-xi.vercel.app/",
+        "gallery": []
+      }
+    ]
   },
   "footer": {
     "madeBy": "Made by"

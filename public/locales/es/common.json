@@ -65,10 +65,87 @@
   },
   "projects": {
     "title": "Algunos de mis proyectos",
-    "viewProject": "Ir a ver",
+    "viewProject": "Ir al sitio web",
     "client": "Cliente",
     "category": "Categoría",
-    "stack": "Stack"
+    "stack": "Stack",
+    "data": [
+      {
+        "id": "1",
+        "imageSrc": "img/portfolio/3.webp",
+        "title": "Acordeavos",
+        "description": [
+          "Tuve la oportunidad de liderar el desarrollo de un eCommerce completo desde cero para un cliente que requería funcionalidades complejas y personalizadas. Para este proyecto, utilizamos tecnologías avanzadas como Next.js para la tienda en línea, React.js para el panel de administración, Redux para la gestión de estado, GraphQL y Apollo para la comunicación con la base de datos Firebase.",
+          "El objetivo del proyecto era crear un ecommerce que ofreciera una experiencia de compra fluida y personalizada para los usuarios, con funcionalidades avanzadas como bulk edition, la carga de facturas que actualizan el stock, opciones personalizadas de contacto con el cliente, informes, página de producto con variantes y precios basados en roles, carrito con cupones de descuentos, medios de pago personalizados, y muchas otras características.",
+          "Como desarrollador principal, trabajé para llevar a cabo el proyecto. Utilizamos Next.js para la construcción de la tienda en línea, React.js para el panel de administración, Redux para la gestión de estado, y GraphQL y Apollo para la comunicación con la base de datos Firebase.",
+          "Luego se implemento Harness Engineering para generar un flujo continuo de desarrollo en el que sólo la IA sea capaz de generar código cumpliendo con los estandares de calidad."
+        ],
+        "stack": "NextJS, ReactJS, GraphQL, Apollo, Redux, NodeJS, Firebase",
+        "category": "Ecommerce",
+        "client": "Acordeavos",
+        "url": "https://acordeavos.com/",
+        "gallery": []
+      },
+      {
+        "id": "2",
+        "imageSrc": "img/portfolio/1.webp",
+        "title": "ShopYA - Marketplace SaaS",
+        "description": [
+          "Plataforma marketplace para pequeños emprendedores en Argentina con modelo de suscripciones.",
+          "**Arquitectura & Desarrollo:**",
+          "• Diseñé y desarrollé la arquitectura completa del sistema (Next.js + NestJS + Firestore)",
+          "• Implementé modelo de negocio SaaS con planes de suscripción",
+          "• Creé sistema multi-tienda con gestión de productos, pedidos y mensajería integrada",
+          "",
+          "**Características Implementadas:**",
+          "• Marketplace multi-vendedor con proceso de aprobación automatizado",
+          "• Sistema de suscripciones recurrentes y gestión de límites por plan",
+          "• Integración con proveedores de envío (Andreani, OCA) y configuración flexible",
+          "• Comunicación directa cliente-vendedor vía mensajería platform-native",
+          "• Dashboard analítico para vendedores con métricas de ventas en tiempo real",
+          "",
+          "**Impacto:**",
+          "• Plataforma escalable que soporta múltiples tiendas sin comisiones por ventas",
+          "• Modelo SaaS generando ingresos recurrentes predecibles",
+          "• Habilitó a cientos de emprendedores a digitalizar sus negocios con bajo costo de entrada",
+          "",
+          "**Tecnologías:** Next.js, NestJS, Firestore, TypeScript, Arquitectura Microservicios"
+        ],
+        "stack": "Next.js, NestJS, PostgreSQL, TypeScript",
+        "category": "SaaS Marketplace",
+        "client": "ShopYA",
+        "url": "https://shopya.com.ar/",
+        "gallery": []
+      },
+      {
+        "id": "3",
+        "imageSrc": "img/portfolio/4.webp",
+        "title": "Metro Cuadrado",
+        "description": [
+          "Sitio web generador de presupuestos a traves de PDFs descargables, con persistencia de datos en local storage y en db a traves de usuarios.",
+          "Para el desarrollo del sitio, se utilizó Next.js. También se integró la API de Mercado Pago para el cobro de suscripciones recurrentes.",
+          "Esta aplicacion fue 100% vibe codeada, cuenta con más de 1000 usuarios activos y 6 meses despues de su lanzamiento, ningun bug critico reportado, sólo mejoras."
+        ],
+        "stack": "NextJS",
+        "category": "Website",
+        "client": "Arquitecto Gustavo Quisbert",
+        "url": "https://metro-cuadrado-bice.vercel.app/",
+        "gallery": []
+      },
+      {
+        "id": "4",
+        "imageSrc": "img/portfolio/2.webp",
+        "title": "NyG Car Detailing",
+        "description": [
+          "Sitio web con landing page para taller de estetica vehicular el cual permite agendar turnos a los usuarios y el dueño de negocio tener un dashboard con informacion importante asi como posibilidad de configurar horarios y ver turnos agendados con multiples vistas y posibilidad de realizar acciones."
+        ],
+        "stack": "NextJS",
+        "category": "Ecommerce",
+        "client": "Nelson de NyG Car Detailing",
+        "url": "https://car-detail-xi.vercel.app/",
+        "gallery": []
+      }
+    ]
   },
   "footer": {
     "madeBy": "Made by"

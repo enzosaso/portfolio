@@ -39,8 +39,8 @@ const Contact = () => {
                 <li>
                   <span className='name'>{t('contact.email')}</span>
                   <p>
-                    <a className='line_effect' href='mailto:hola@enzosaso.com'>
-                      hola@enzosaso.com
+                    <a className='line_effect' href='mailto:enzoarielsaso@gmail.com'>
+                      enzoarielsaso@gmail.com
                     </a>
                   </p>
                 </li>
