@@ -18,6 +18,7 @@ export default function Document() {
         />
         <link href='https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap' rel='stylesheet' />
         <link rel='icon' type='image/png' href='/img/favicon.png'></link>
+        <script src='https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js'></script>
       </Head>
       <body>
         <Main />

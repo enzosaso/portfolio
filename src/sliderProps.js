@@ -1,6 +1,6 @@
-import SwiperCore, { Autoplay, EffectFade, Navigation, Pagination } from 'swiper'
+import { register } from 'swiper/element/bundle'
 
-SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay])
+register()
 
 export const projectSliderProps = {
   slidesPerView: 1,

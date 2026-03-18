@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import { useTranslation } from 'next-i18next'
 import { projectSliderProps } from '../sliderProps'
 import { dataImage } from '../utilits'
@@ -88,6 +87,15 @@ const Projects = () => {
     dataImage()
   }, [])
 
+  useEffect(() => {
+    // Initialize Swiper Element
+    const swiperEl = document.querySelector('swiper-container')
+    if (swiperEl) {
+      Object.assign(swiperEl, projectSliderProps)
+      swiperEl.initialize()
+    }
+  }, [])
+
   return (
     <>
       <DetailsPopup
@@ -107,13 +115,17 @@ const Projects = () => {
               </h3>
             </div>
             <div className='portfolio_list'>
-              <Swiper {...projectSliderProps} className='owl-carousel gallery_zoom'>
+              <swiper-container class='gallery_zoom' {...projectSliderProps}>
                 {PROJECTS_DATA.map(item => (
-                  <SwiperSlide key={item.id}>
+                  <swiper-slide key={item.id}>
                     <div className='list_inner'>
                       <div className='image'>
                         <img src='img/thumbs/37-40.jpg' alt='' />
-                        <div className='main' data-img-url={item.imageSrc} />
+                        <div
+                          className='main'
+                          data-img-url={item.imageSrc}
+                          style={{ backgroundImage: `url(${item.imageSrc})` }}
+                        />
                       </div>
                       <div className='details'>
                         <span className='category'>{item.category}</span>
@@ -126,9 +138,9 @@ const Projects = () => {
                         onClick={() => setDetailsPopup({ open: true, data: item })}
                       />
                     </div>
-                  </SwiperSlide>
+                  </swiper-slide>
                 ))}
-              </Swiper>
+              </swiper-container>
               <a className='prev_button' href='#'>
                 <img className='svg' src='img/svg/prev.svg' alt='' />
               </a>
