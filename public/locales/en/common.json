@@ -8,19 +8,19 @@
   "home": {
     "greeting": "Hi, I'm",
     "name": "Enzo Saso",
-    "role": "Frontend Developer",
-    "description": "With over 4 years of experience, I have developed more than 20 projects completing all their phases, using agile methodologies and best development practices.",
+    "role": "Sr. Frontend Engineer",
+    "description": "With 5+ years of experience shipping production-grade web products, owning decisions from architecture to measurable business impact. Specialized in JavaScript, TypeScript, Node.js, React, and Next.js, with a strong bias toward clarity, scalability, and long-term maintainability.",
     "sayHello": "Say Hello",
     "myWork": "My Work",
     "followMe": "Follow me:"
   },
   "about": {
     "title": "About Me",
-    "description": "I have experience creating responsive and accessible user interfaces, website performance optimization (WPO), API integration, and SEO. I have a solid understanding of web design principles and UX/UI best practices. I also have experience in Extreme Programming (XP) and its practices like Test Driven Development (TDD), Pair Programming, Code Refactoring, CI/CD, etc.",
-    "personalDescription": "I like to feel ownership of the projects I work on and not only write maintainable and scalable code, but also have a critical vision of the product, features, and business. I always seek creative and innovative solutions to improve user experience and product quality.",
+    "description": "Senior Software Developer with expertise in React.js to Next.js migrations, microfrontend architecture refactoring, and production incident response. Strong focus on code quality standards, technical debt reduction, and cross-team collaboration. Experience in AI-powered feature implementation and complex business logic systems.",
+    "personalDescription": "Product-minded engineer who challenges assumptions, uncovers real constraints, and delivers solutions that move meaningful metrics. AI works under my standards: it generates code aligned with my conventions, architectural principles, and quality bar. Strong bias toward clarity, scalability, and long-term maintainability.",
     "experience": "Years of experience",
-    "download_cv": "My CV",
-    "download_cv_button": "Download CV"
+    "download_cv": "My resume",
+    "download_cv_button": "Download resume"
   },
   "services": {
     "title": "What I can do",

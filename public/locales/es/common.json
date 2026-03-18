@@ -8,16 +8,16 @@
   "home": {
     "greeting": "Hola, soy",
     "name": "Enzo Saso",
-    "role": "Frontend Developer",
-    "description": "Con más de 4 años de experiencia, he desarrollado más de 20 proyectos completando todas sus fases, utilizando metodologías ágiles y las mejores prácticas de desarrollo.",
+    "role": "Sr. Frontend Engineer",
+    "description": "Con 5+ años de experiencia desarrollando productos web de producción, tomando decisiones desde la arquitectura hasta el impacto comercial medible. Especializado en JavaScript, TypeScript, Node.js, React y Next.js, con fuerte enfoque en claridad, escalabilidad y mantenibilidad a largo plazo.",
     "sayHello": "Di Hola",
     "myWork": "Mis trabajos",
     "followMe": "Sigueme:"
   },
   "about": {
     "title": "Acerca de mi",
-    "description": "Tengo experiencia en la creación de interfaces de usuario responsives y accesibles, la optimización del rendimiento del sitio web (WPO), la integración con APIs y SEO. Tengo una sólida comprensión de los principios de diseño web y las mejores prácticas de UX/UI. También tengo experiencia en Extreme Programming (XP) y sus prácticas como Test Driven Development (TDD), Pair Programming, Code Refactoring, CI/CD, etc.",
-    "personalDescription": "Me gusta sentirme dueño de los proyectos en los que trabajo y no solo escribir código mantenible y escalable, sino también tener una visión crítica del producto, las funcionalidades y el negocio. Siempre busco soluciones creativas e innovadoras para mejorar la experiencia del usuario y la calidad del producto.",
+    "description": "Senior Software Developer con experiencia en migraciones de React.js a Next.js, refactorización de arquitectura microfrontend y respuesta a incidentes de producción. Fuerte enfoque en estándares de calidad de código, reducción de deuda técnica y colaboración entre equipos. Experiencia en implementación de características con IA y sistemas de lógica de negocio complejos.",
+    "personalDescription": "Ingeniero con mentalidad de producto que desafía suposiciones, descubre restricciones reales y entrega soluciones que mueven métricas significativas. La IA trabaja bajo mis estándares: genera código alineado con mis convenciones, principios arquitectónicos y nivel de calidad. Fuerte sesgo hacia claridad, escalabilidad y mantenibilidad a largo plazo.",
     "experience": "Años de experiencia",
     "download_cv": "Mi CV",
     "download_cv_button": "Descargar CV"

@@ -27,14 +27,14 @@ const ExpertAreas = () => {
 
   const experiences = [
     {
-      company: 'enzosaso.com',
-      designation: 'Freelancer',
-      time: '2017 - Present'
+      company: 'wyeworks.com',
+      designation: 'Senior Software Engineer',
+      time: '2023 - Present'
     },
     {
-      company: 'acordeavos.com',
-      designation: 'Frontend Developer',
-      time: '2019 - 2023'
+      company: 'Freelancer',
+      designation: 'Full Stack Developer',
+      time: '2017 - Present'
     }
   ]
 
