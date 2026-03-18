@@ -34,6 +34,19 @@ const ChatBot = () => {
   const container = useRef()
   useOpen(setIsOpen)
 
+  // Function to convert URLs and markdown links to clickable HTML
+  const convertLinks = text => {
+    // Convert markdown links [text](url) to HTML links
+    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g
+    let convertedText = text.replace(markdownLinkRegex, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+
+    // Convert plain URLs to HTML links
+    const urlRegex = /(https?:\/\/[^\s]+)/g
+    convertedText = convertedText.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
+
+    return convertedText
+  }
+
   // Initialize messages with i18n when component mounts
   useEffect(() => {
     const greeting = t('chatbot.greeting').replace('{name}', t('home.name')).replace('{role}', t('home.role'))
@@ -149,7 +162,7 @@ const ChatBot = () => {
           <div className='time'>Hoy</div>
           {messages.map(message => (
             <div key={message.id} className={`message ${message.type}`}>
-              {message.text}
+              <div dangerouslySetInnerHTML={{ __html: convertLinks(message.text) }} />
             </div>
           ))}
           {loading ? (
