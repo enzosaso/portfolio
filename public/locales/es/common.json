@@ -147,6 +147,12 @@
       }
     ]
   },
+  "seo": {
+    "title": "Enzo Saso | Ingeniero Frontend Senior",
+    "description": "Ingeniero Frontend Senior con 5+ años desarrollando aplicaciones web en producción. Especializado en React, Next.js y arquitecturas escalables. Transformo visiones de negocio en soluciones técnicas excepcionales.",
+    "ogTitle": "Enzo Saso - Portafolio de Ingeniero Frontend Senior",
+    "ogDescription": "Ingeniero Frontend Senior con 5+ años desarrollando aplicaciones web en producción. Especializado en React, Next.js y arquitecturas escalables."
+  },
   "footer": {
     "madeBy": "Made by"
   }

@@ -1,11 +1,14 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
+import { useTranslation } from 'next-i18next'
 import ImageView from '../components/popup/ImageView'
 import VideoPopup from '../components/popup/VideoPopup'
 import { dataImage, hashtag_, imgToSVG, scrollSection, stickyNav } from '../utilits'
 import PreLoader from './PreLoader'
 
 const Layout = ({ children }) => {
+  const { t } = useTranslation('common')
+
   useEffect(() => {
     imgToSVG()
     dataImage()
@@ -17,17 +20,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Enzo Saso | Inicio</title>
-        <meta
-          name='description'
-          content='¡Hola! 👋 Soy Frontend Developer con más de 4 años de experiencia en el desarrollo de sitios web y aplicaciones. Me apasiona crear soluciones creativas y de alto rendimiento utilizando las últimas tecnologías.'
-          key='desc'
-        />
-        <meta property='og:title' content='Portafolio de Enzo Saso' />
-        <meta
-          property='og:description'
-          content='¡Hola! 👋 Soy Frontend Developer con más de 4 años de experiencia en el desarrollo de sitios web y aplicaciones. Me apasiona crear soluciones creativas y de alto rendimiento utilizando las últimas tecnologías.'
-        />
+        <title>{t('seo.title')}</title>
+        <meta name='description' content={t('seo.description')} key='desc' />
+        <meta property='og:title' content={t('seo.ogTitle')} />
+        <meta property='og:description' content={t('seo.ogDescription')} />
         <meta property='og:image' content='https://portfolio.enzosaso.com/img/og-prev.jpg' />
       </Head>
       <PreLoader />
