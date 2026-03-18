@@ -26,20 +26,20 @@
     "title": "Lo que puedo hacer",
     "services": [
       {
-        "name": "Proyectos sólidos y escalables",
-        "description": "Como Frontend developer, tengo la habilidad de diseñar y desarrollar arquitecturas de software frontend sólidas y escalables. Siempre considero aspectos como la seguridad, el rendimiento y la facilidad de mantenimiento, para asegurarme de que el proyecto sea robusto y escalable a largo plazo."
+        "name": "Arquitectura Frontend Escalable",
+        "description": "Diseño y desarrollo de arquitecturas frontend robustas que escalan con el negocio. Especializado en crear sistemas modulares, mantenibles y de alto rendimiento que soportan crecimiento exponencial sin comprometer la calidad o la experiencia del usuario."
       },
       {
-        "name": "Código limpio, estructurado y mantenible",
-        "description": "Soy responsable de escribir un código limpio, estructurado y mantenible en HTML, CSS y JavaScript. Siempre me aseguro de seguir las mejores prácticas de codificación y estándares de la industria. Además, pruebo y depuro mi trabajo regularmente para garantizar que sea funcional y cumpla con los requisitos del proyecto."
+        "name": "Código de Calidad Production-Ready",
+        "description": "Creación de código limpio, estructurado y mantenible siguiendo estándares de la industria. Implemento mejores prácticas de codificación, patrones de diseño avanzados y testing automatizado para garantizar soluciones robustas, eficientes y libres de deudas técnicas."
       },
       {
-        "name": "Liderar un equipo de devs",
-        "description": "Tengo experiencia liderando equipos. Como líder, delego tareas y aseguro que los plazos se cumplan y que el trabajo se entregue a tiempo. Además, proporciono orientación y apoyo a mi equipo, y me aseguro de que tengan los recursos y herramientas necesarios para realizar su trabajo de manera efectiva."
+        "name": "Liderazgo Técnico y Mentoring",
+        "description": "Liderazgo de equipos de desarrollo con enfoque en resultados y crecimiento profesional. Establezco estándares técnicos, guío la arquitectura de soluciones y fomento una cultura de excelencia técnica, asegurando entregas consistentes y desarrollo continuo del equipo."
       },
       {
-        "name": "Colaboración con diseñadores y otros devs",
-        "description": "Trabajar en colaboración con diseñadores y otros desarrolladores es crucial para asegurar que la interfaz de usuario del proyecto sea intuitiva y diseñada de manera efectiva para garantizar una experiencia de usuario positiva. Como Frontend developer, tengo la habilidad de trabajar en equipo, comunicar mis ideas y colaborar eficazmente para lograr los objetivos del proyecto."
+        "name": "Colaboración Estratégica Multidisciplinaria",
+        "description": "Sinergia efectiva con diseñadores UX/UI, backend developers y stakeholders para traducir visiones de negocio en soluciones técnicas excepcionales. Facilito la comunicación entre equipos y aseguro alineación perfecta entre objetivos de negocio y ejecución técnica."
       }
     ]
   },
