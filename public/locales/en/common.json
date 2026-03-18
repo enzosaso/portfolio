@@ -1,0 +1,76 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "name": "Enzo Saso",
+    "role": "Frontend Developer",
+    "description": "With over 4 years of experience, I have developed more than 20 projects completing all their phases, using agile methodologies and best development practices.",
+    "sayHello": "Say Hello",
+    "myWork": "My Work",
+    "followMe": "Follow me:"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I have experience creating responsive and accessible user interfaces, website performance optimization (WPO), API integration, and SEO. I have a solid understanding of web design principles and UX/UI best practices. I also have experience in Extreme Programming (XP) and its practices like Test Driven Development (TDD), Pair Programming, Code Refactoring, CI/CD, etc.",
+    "personalDescription": "I like to feel ownership of the projects I work on and not only write maintainable and scalable code, but also have a critical vision of the product, features, and business. I always seek creative and innovative solutions to improve user experience and product quality.",
+    "experience": "Years of experience",
+    "download_cv": "My CV",
+    "download_cv_button": "Download CV"
+  },
+  "services": {
+    "title": "What I can do",
+    "services": [
+      {
+        "name": "Solid and scalable projects",
+        "description": "As a Frontend developer, I have the ability to design and develop solid and scalable frontend software architectures. I always consider aspects like security, performance, and maintainability to ensure the project is robust and scalable in the long term."
+      },
+      {
+        "name": "Clean, structured, and maintainable code",
+        "description": "I'm responsible for writing clean, structured, and maintainable code in HTML, CSS, and JavaScript. I always ensure to follow coding best practices and industry standards. Additionally, I regularly test and debug my work to ensure it's functional and meets project requirements."
+      },
+      {
+        "name": "Leading a team of developers",
+        "description": "I have experience leading teams. As a leader, I delegate tasks and ensure deadlines are met and work is delivered on time. Additionally, I provide guidance and support to my team, and ensure they have the necessary resources and tools to perform their work effectively."
+      },
+      {
+        "name": "Collaboration with designers and other developers",
+        "description": "Working collaboratively with designers and other developers is crucial to ensure the project's user interface is intuitive and effectively designed to guarantee a positive user experience. As a Frontend developer, I have the ability to work in a team, communicate my ideas, and collaborate effectively to achieve project goals."
+      }
+    ]
+  },
+  "expertAreas": {
+    "title": "My areas",
+    "skills": "Skills",
+    "experience": "Experience",
+    "counts": {
+      "challenges": "Challenges",
+      "contributions": "Contributions",
+      "bigProjects": "Big Projects",
+      "coffees": "Coffees"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's work together",
+    "description": "I'm ready to bring my experience and skills to your team. Shall we start?",
+    "sayHello": "Say Hello",
+    "phone": "Phone:",
+    "email": "Email:",
+    "followMe": "Follow me:"
+  },
+  "projects": {
+    "title": "Some of my projects",
+    "viewProject": "View Project",
+    "client": "Client",
+    "category": "Category",
+    "stack": "Stack"
+  },
+  "footer": {
+    "madeBy": "Made by"
+  }
+}

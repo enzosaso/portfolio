@@ -1,6 +1,9 @@
 import { RRSS_LINKS, VIDEO_INTRO } from '../constants'
+import { useTranslation } from 'next-i18next'
 
 const Home = ({ dark }) => {
+  const { t } = useTranslation('common')
+
   return (
     <div className='hero section' id='home'>
       <div className='container'>
@@ -8,32 +11,29 @@ const Home = ({ dark }) => {
           <div className='details'>
             <div className='short'>
               <h3>
-                Enzo Saso <img className='svg' src='img/svg/hi.svg' alt='' />
+                {t('home.name')} <img className='svg' src='img/svg/hi.svg' alt='' />
               </h3>
-              <span className='job'>Frontend Developer</span>
+              <span className='job'>{t('home.role')}</span>
             </div>
             <div className='text'>
-              <p>
-                Con más de 4 años de experiencia, he desarrollado más de 20 proyectos completando todas sus fases,
-                utilizando metodologías ágiles y las mejores prácticas de desarrollo.
-              </p>
+              <p>{t('home.description')}</p>
             </div>
             <div className='buttons'>
               <div className='boxed_button'>
                 <a className='anchor' href='mailto:hola@enzosaso.com'>
-                  Di Hola <img className='svg' src='img/svg/send.svg' alt='' />
+                  {t('home.sayHello')} <img className='svg' src='img/svg/send.svg' alt='' />
                 </a>
               </div>
               <div className='simple_button'>
                 <a className='line_effect anchor' href='#portfolio'>
-                  Mis trabajos <img className='svg' src='img/svg/top-arrow.svg' alt='' />
+                  {t('home.myWork')} <img className='svg' src='img/svg/top-arrow.svg' alt='' />
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div className='follow'>
-          <span>Sigueme:</span>
+          <span>{t('home.followMe')}</span>
           <ul>
             <li>
               <a href={RRSS_LINKS.linkedin} target='_blank' rel='noreferrer'>

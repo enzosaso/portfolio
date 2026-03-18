@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import About from '../src/components/About'
 import Contact from '../src/components/Contact'
 import ExpertAreas from '../src/components/ExpertAreas'
@@ -32,6 +33,14 @@ const Index = () => {
       <ChatBot />
     </Layout>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || 'es', ['common']))
+    }
+  }
 }
 
 export default Index

@@ -1,6 +1,8 @@
 import Popup from './Popup'
+import { useTranslation } from 'next-i18next'
 
 const DetailsPopup = ({ open, close, data }) => {
+  const { t } = useTranslation('common')
   const { imageSrc = '', title = '', description = [], stack, category, client, url, gallery = [] } = data
 
   return (
@@ -15,7 +17,7 @@ const DetailsPopup = ({ open, close, data }) => {
           {url ? (
             <span>
               <a href={url} target='_blank' rel='noreferrer'>
-                Ir a ver
+                {t('projects.viewProject', 'Ir a ver')}
               </a>
             </span>
           ) : (
@@ -31,17 +33,17 @@ const DetailsPopup = ({ open, close, data }) => {
           <div className='detailbox'>
             <ul>
               <li>
-                <span className='first'>Cliente</span>
+                <span className='first'>{t('projects.client', 'Cliente')}</span>
                 <span>{client}</span>
               </li>
               <li>
-                <span className='first'>Categoría</span>
+                <span className='first'>{t('projects.category', 'Categoría')}</span>
                 <span>
                   <a href='#'>{category}</a>
                 </span>
               </li>
               <li>
-                <span className='first'>Stack</span>
+                <span className='first'>{t('projects.stack', 'Stack')}</span>
                 <span>{stack}</span>
               </li>
             </ul>

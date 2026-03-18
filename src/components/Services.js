@@ -1,42 +1,20 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'next-i18next'
 import { Servicehashtag } from '../utilits'
 import ServicePopup from './popup/ServicePopup'
 
-const serviceData = [
-  {
-    name: 'Proyectos sólidos y escalables',
-    img: 'img/service/1.jpg',
-    description: [
-      'Como Frontend developer, tengo la habilidad de diseñar y desarrollar arquitecturas de software frontend sólidas y escalables. Siempre considero aspectos como la seguridad, el rendimiento y la facilidad de mantenimiento, para asegurarme de que el proyecto sea robusto y escalable a largo plazo.'
-    ]
-  },
-  {
-    name: 'Código limpio, estructurado y mantenible',
-    img: 'img/service/2.jpg',
-    description: [
-      'Soy responsable de escribir un código limpio, estructurado y mantenible en HTML, CSS y JavaScript. Siempre me aseguro de seguir las mejores prácticas de codificación y estándares de la industria. Además, pruebo y depuro mi trabajo regularmente para garantizar que sea funcional y cumpla con los requisitos del proyecto.'
-    ]
-  },
-  {
-    name: 'Liderar un equipo de devs',
-    img: 'img/service/3.jpg',
-    description: [
-      'Tengo experiencia liderando equipos. Como líder, delego tareas y aseguro que los plazos se cumplan y que el trabajo se entregue a tiempo. Además, proporciono orientación y apoyo a mi equipo, y me aseguro de que tengan los recursos y herramientas necesarios para realizar su trabajo de manera efectiva.'
-    ]
-  },
-  {
-    name: 'Colaboración con diseñadores y otros devs',
-    img: 'img/service/4.jpg',
-    description: [
-      'Trabajar en colaboración con diseñadores y otros desarrolladores es crucial para asegurar que la interfaz de usuario del proyecto sea intuitiva y diseñada de manera efectiva para garantizar una experiencia de usuario positiva. Como Frontend developer, tengo la habilidad de trabajar en equipo, comunicar mis ideas y colaborar eficazmente para lograr los objetivos del proyecto.'
-    ]
-  }
-]
-
 const Services = () => {
+  const { t } = useTranslation('common')
   const [current, setCurrent] = useState(0)
   const [activeData, setActiveData] = useState({})
   const [open, setOpen] = useState(false)
+
+  const serviceData = t('services.services', { returnObjects: true }).map((service, index) => ({
+    name: service.name,
+    img: `img/service/${index + 1}.jpg`,
+    description: [service.description]
+  }))
+
   useEffect(() => {
     Servicehashtag()
   }, [current])
@@ -50,9 +28,8 @@ const Services = () => {
             <div className='main_title'>
               <h3>
                 <span>
-                  Lo que puedo
+                  {t('services.title')}
                   <br />
-                  hacer
                 </span>
               </h3>
             </div>

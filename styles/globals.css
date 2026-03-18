@@ -1,12 +1,12 @@
-@import "../public/css/plugins.css";
-@import "../public/css/style.css";
-@import "../public/css/chat.css";
+@import '../public/css/plugins.css';
+@import '../public/css/style.css';
+@import '../public/css/chat.css';
 
-@import "swiper/css";
-@import "swiper/css/navigation";
-@import "swiper/css/pagination";
-@import "swiper/css/scrollbar";
-@import "swiper/css/effect-fade";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/scrollbar';
+@import 'swiper/css/effect-fade';
 
 html {
   scroll-behavior: smooth;
@@ -39,4 +39,37 @@ img.mfp-img {
 
 span.current {
   color: unset !important;
+}
+
+/* Language Switcher */
+.language_switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  color: #ff344f;
+}
+
+.lang-btn.active {
+  color: #ff344f;
+  background: rgba(255, 52, 79, 0.1);
+}
+
+.language_switcher span {
+  color: #999;
 }

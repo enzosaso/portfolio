@@ -1,0 +1,76 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "Hola, soy",
+    "name": "Enzo Saso",
+    "role": "Frontend Developer",
+    "description": "Con más de 4 años de experiencia, he desarrollado más de 20 proyectos completando todas sus fases, utilizando metodologías ágiles y las mejores prácticas de desarrollo.",
+    "sayHello": "Di Hola",
+    "myWork": "Mis trabajos",
+    "followMe": "Sigueme:"
+  },
+  "about": {
+    "title": "Acerca de mi",
+    "description": "Tengo experiencia en la creación de interfaces de usuario responsives y accesibles, la optimización del rendimiento del sitio web (WPO), la integración con APIs y SEO. Tengo una sólida comprensión de los principios de diseño web y las mejores prácticas de UX/UI. También tengo experiencia en Extreme Programming (XP) y sus prácticas como Test Driven Development (TDD), Pair Programming, Code Refactoring, CI/CD, etc.",
+    "personalDescription": "Me gusta sentirme dueño de los proyectos en los que trabajo y no solo escribir código mantenible y escalable, sino también tener una visión crítica del producto, las funcionalidades y el negocio. Siempre busco soluciones creativas e innovadoras para mejorar la experiencia del usuario y la calidad del producto.",
+    "experience": "Años de experiencia",
+    "download_cv": "Mi CV",
+    "download_cv_button": "Descargar CV"
+  },
+  "services": {
+    "title": "Lo que puedo hacer",
+    "services": [
+      {
+        "name": "Proyectos sólidos y escalables",
+        "description": "Como Frontend developer, tengo la habilidad de diseñar y desarrollar arquitecturas de software frontend sólidas y escalables. Siempre considero aspectos como la seguridad, el rendimiento y la facilidad de mantenimiento, para asegurarme de que el proyecto sea robusto y escalable a largo plazo."
+      },
+      {
+        "name": "Código limpio, estructurado y mantenible",
+        "description": "Soy responsable de escribir un código limpio, estructurado y mantenible en HTML, CSS y JavaScript. Siempre me aseguro de seguir las mejores prácticas de codificación y estándares de la industria. Además, pruebo y depuro mi trabajo regularmente para garantizar que sea funcional y cumpla con los requisitos del proyecto."
+      },
+      {
+        "name": "Liderar un equipo de devs",
+        "description": "Tengo experiencia liderando equipos. Como líder, delego tareas y aseguro que los plazos se cumplan y que el trabajo se entregue a tiempo. Además, proporciono orientación y apoyo a mi equipo, y me aseguro de que tengan los recursos y herramientas necesarios para realizar su trabajo de manera efectiva."
+      },
+      {
+        "name": "Colaboración con diseñadores y otros devs",
+        "description": "Trabajar en colaboración con diseñadores y otros desarrolladores es crucial para asegurar que la interfaz de usuario del proyecto sea intuitiva y diseñada de manera efectiva para garantizar una experiencia de usuario positiva. Como Frontend developer, tengo la habilidad de trabajar en equipo, comunicar mis ideas y colaborar eficazmente para lograr los objetivos del proyecto."
+      }
+    ]
+  },
+  "expertAreas": {
+    "title": "Mis areas",
+    "skills": "Skills",
+    "experience": "Experiencia",
+    "counts": {
+      "challenges": "Desafios",
+      "contributions": "Contribuciones",
+      "bigProjects": "Proyectos grandes",
+      "coffees": "Cafés"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Trabajemos juntos",
+    "description": "Estoy listo para aportar mi experiencia y habilidades a tu equipo. ¿Comenzamos?",
+    "sayHello": "Di Hola",
+    "phone": "Teléfono:",
+    "email": "Email:",
+    "followMe": "Sigueme:"
+  },
+  "projects": {
+    "title": "Algunos de mis proyectos",
+    "viewProject": "Ir a ver",
+    "client": "Cliente",
+    "category": "Categoría",
+    "stack": "Stack"
+  },
+  "footer": {
+    "madeBy": "Made by"
+  }
+}

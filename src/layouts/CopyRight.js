@@ -1,4 +1,8 @@
+import { useTranslation } from 'next-i18next'
+
 const CopyRight = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div className='section'>
       <div className='copyright'>
@@ -9,7 +13,7 @@ const CopyRight = () => {
             </div>
             <div className='copy'>
               <p>
-                Made by{' '}
+                {t('footer.madeBy', 'Made by')}{' '}
                 <a href='https://enzosaso.com/' target='_blank' rel='noreferrer'>
                   EnzoSaso.
                 </a>

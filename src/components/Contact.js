@@ -1,6 +1,9 @@
 import { RRSS_LINKS, VIDEO_INTRO } from '../constants'
+import { useTranslation } from 'next-i18next'
 
 const Contact = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div className='section' id='contact'>
       <div className='contact'>
@@ -13,12 +16,12 @@ const Contact = () => {
               </a>
             </div>
             <div className='text'>
-              <h3>Trabajemos juntos</h3>
-              <p>Estoy listo para aportar mi experiencia y habilidades a tu equipo. ¿Comenzamos?</p>
+              <h3>{t('contact.subtitle')}</h3>
+              <p>{t('contact.description')}</p>
             </div>
             <div className='boxed_button'>
               <a href='mailto:hola@enzosaso.com'>
-                Di Hola <img className='svg' src='img/svg/send.svg' alt='' />
+                {t('contact.sayHello')} <img className='svg' src='img/svg/send.svg' alt='' />
               </a>
             </div>
           </div>
@@ -26,7 +29,7 @@ const Contact = () => {
             <div className='left'>
               <ul>
                 <li>
-                  <span className='name'>Teléfono:</span>
+                  <span className='name'>{t('contact.phone')}</span>
                   <p>
                     <a className='line_effect' href='tel:+5492604632048'>
                       +54 (2604) 632048
@@ -34,7 +37,7 @@ const Contact = () => {
                   </p>
                 </li>
                 <li>
-                  <span className='name'>Email:</span>
+                  <span className='name'>{t('contact.email')}</span>
                   <p>
                     <a className='line_effect' href='mailto:hola@enzosaso.com'>
                       hola@enzosaso.com
@@ -45,7 +48,7 @@ const Contact = () => {
             </div>
             <div className='right'>
               <div className='follow'>
-                <span>Sigueme:</span>
+                <span>{t('contact.followMe')}</span>
                 <ul>
                   <li>
                     <a href={RRSS_LINKS.linkedin} target='_blank' rel='noreferrer'>

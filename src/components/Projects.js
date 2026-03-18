@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { useTranslation } from 'next-i18next'
 import { projectSliderProps } from '../sliderProps'
 import { dataImage } from '../utilits'
 import DetailsPopup from './popup/DetailsPopup'
@@ -80,6 +81,7 @@ const PROJECTS_DATA = [
 ]
 
 const Projects = () => {
+  const { t } = useTranslation('common')
   const [detailsPopup, setDetailsPopup] = useState({ open: false, data: PROJECTS_DATA[0] })
 
   useEffect(() => {
@@ -99,9 +101,8 @@ const Projects = () => {
             <div className='main_title'>
               <h3>
                 <span>
-                  Algunos de mis
+                  {t('projects.title', 'Algunos de mis proyectos')}
                   <br />
-                  proyectos
                 </span>
               </h3>
             </div>

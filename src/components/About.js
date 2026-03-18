@@ -1,12 +1,16 @@
+import { useTranslation } from 'next-i18next'
+
 const About = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div className='section' id='about'>
       <div className='about'>
         <div className='about_in'>
           <div className='left'>
             <div className='box'>
-              <h3 className='year'>+4</h3>
-              <span className='experience'>Años de experiencia</span>
+              <h3 className='year'>+5</h3>
+              <span className='experience'>{t('about.experience')}</span>
               <h3 className='name'>Enzo Saso</h3>
             </div>
           </div>
@@ -16,21 +20,16 @@ const About = () => {
             </span>
             <div className='main_title'>
               <h3>
-                <span>Acerca de mi</span>
+                <span>{t('about.title')}</span>
               </h3>
             </div>
             <div className='text'>
-              <p>
-                Me gusta sentirme dueño de los proyectos en los que trabajo y no solo escribir código mantenible y
-                escalable, sino también tener una visión crítica del producto, las funcionalidades y el negocio. Siempre
-                busco soluciones creativas e innovadoras para mejorar la experiencia del usuario y la calidad del
-                producto.
-              </p>
+              <p>{t('about.personalDescription')}</p>
             </div>
             <div className='short'>
               <div className='boxed_button'>
                 <a href='img/cv/CV.pdf' download>
-                  Descargar CV <img className='svg' src='img/svg/paper.svg' alt='' />
+                  {t('about.download_cv_button')} <img className='svg' src='img/svg/paper.svg' alt='' />
                 </a>
               </div>
               <img src='img/signature.png' alt='' />

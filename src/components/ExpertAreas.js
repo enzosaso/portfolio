@@ -1,39 +1,42 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'next-i18next'
 import { filterHashtag } from '../utilits'
 import Counter from './Counter'
 
-const counts = [
-  { name: 'Desafios', value: 24 },
-  { name: 'Contribuciones ', value: 318 },
-  { name: 'Proyectos grandes', value: 2 },
-  { name: 'Cafés', value: 527 }
-]
-
-const skills = [
-  { name: 'ReactJS', icon: 'img/svg/react.svg' },
-  { name: 'NextJS', icon: 'img/svg/nextjs.svg' },
-  { name: 'NodeJS', icon: 'img/svg/javascript.svg' },
-  { name: 'TypeScript', icon: 'img/svg/typescript.svg' },
-  { name: 'GraphQL', icon: 'img/svg/graphql.svg' },
-  { name: 'WordPress', icon: 'img/svg/wordpress.svg' }
-]
-
-const experiences = [
-  {
-    company: 'enzosaso.com',
-    designation: 'Freelancer',
-    time: '2017 - Present'
-  },
-  {
-    company: 'acordeavos.com',
-    designation: 'Frontend Developer',
-    time: '2019 - 2023'
-  }
-]
-
 const ExpertAreas = () => {
+  const { t } = useTranslation('common')
   const [activeTab, setActiveTab] = useState(1)
   const activeContentTab = value => (activeTab == value ? 'current' : '')
+
+  const counts = [
+    { name: t('expertAreas.counts.challenges'), value: 24 },
+    { name: t('expertAreas.counts.contributions'), value: 318 },
+    { name: t('expertAreas.counts.bigProjects'), value: 2 },
+    { name: t('expertAreas.counts.coffees'), value: 527 }
+  ]
+
+  const skills = [
+    { name: 'ReactJS', icon: 'img/svg/react.svg' },
+    { name: 'NextJS', icon: 'img/svg/nextjs.svg' },
+    { name: 'NodeJS', icon: 'img/svg/javascript.svg' },
+    { name: 'TypeScript', icon: 'img/svg/typescript.svg' },
+    { name: 'GraphQL', icon: 'img/svg/graphql.svg' },
+    { name: 'WordPress', icon: 'img/svg/wordpress.svg' },
+    { name: 'n8n', icon: 'img/svg/n8n.svg' }
+  ]
+
+  const experiences = [
+    {
+      company: 'enzosaso.com',
+      designation: 'Freelancer',
+      time: '2017 - Present'
+    },
+    {
+      company: 'acordeavos.com',
+      designation: 'Frontend Developer',
+      time: '2019 - 2023'
+    }
+  ]
 
   useEffect(() => {
     filterHashtag()
@@ -48,21 +51,15 @@ const ExpertAreas = () => {
               <div className='left'>
                 <div className='main_title'>
                   <h3>
-                    <span>Mis areas</span>
+                    <span>{t('expertAreas.title')}</span>
                   </h3>
                 </div>
                 <div className='text'>
-                  <p>
-                    Tengo experiencia en la creación de interfaces de usuario responsives y accesibles, la optimización
-                    del rendimiento del sitio web (WPO), la integración con APIs y SEO. Tengo una sólida comprensión de
-                    los principios de diseño web y las mejores prácticas de UX/UI. También tengo experiencia en Extreme
-                    Programming (XP) y sus prácticas como Test Driven Development (TDD), Pair Programming, Code
-                    Refactoring, CI/CD, etc.
-                  </p>
+                  <p>{t('about.description')}</p>
                 </div>
                 <div className='boxed_button'>
                   <a href='img/cv/CV.pdf' download>
-                    Mi CV <img className='svg' src='img/svg/paper.svg' alt='' />
+                    {t('about.download_cv')} <img className='svg' src='img/svg/paper.svg' alt='' />
                   </a>
                 </div>
               </div>
@@ -75,7 +72,8 @@ const ExpertAreas = () => {
                         onClick={() => setActiveTab(1)}
                         data-tab='tab_1'
                       >
-                        <span>Skills</span> <img className='svg' src='img/svg/top-arrow.svg' alt='' />
+                        <span>{t('expertAreas.skills')}</span>{' '}
+                        <img className='svg' src='img/svg/top-arrow.svg' alt='' />
                       </a>
                     </li>
                     <li>
@@ -84,7 +82,8 @@ const ExpertAreas = () => {
                         onClick={() => setActiveTab(2)}
                         data-tab='tab_2'
                       >
-                        <span>Experiencia</span> <img className='svg' src='img/svg/top-arrow.svg' alt='' />
+                        <span>{t('expertAreas.experience')}</span>{' '}
+                        <img className='svg' src='img/svg/top-arrow.svg' alt='' />
                       </a>
                     </li>
                   </ul>
