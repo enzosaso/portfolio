@@ -3,6 +3,7 @@ import { useOpen } from '../../hooks/useOpen'
 import { getChatGPT } from '../../services/getChatGPT'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
+import Linkify from 'react-linkify'
 
 const SendMessageIcon = () => {
   return (
@@ -33,19 +34,6 @@ const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false)
   const container = useRef()
   useOpen(setIsOpen)
-
-  // Function to convert URLs and markdown links to clickable HTML
-  const convertLinks = text => {
-    // Convert markdown links [text](url) to HTML links
-    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g
-    let convertedText = text.replace(markdownLinkRegex, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-
-    // Convert plain URLs to HTML links
-    const urlRegex = /(https?:\/\/[^\s]+)/g
-    convertedText = convertedText.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
-
-    return convertedText
-  }
 
   // Initialize messages with i18n when component mounts
   useEffect(() => {
@@ -162,7 +150,15 @@ const ChatBot = () => {
           <div className='time'>Hoy</div>
           {messages.map(message => (
             <div key={message.id} className={`message ${message.type}`}>
-              <div dangerouslySetInnerHTML={{ __html: convertLinks(message.text) }} />
+              <Linkify
+                componentDecorator={(decoratedHref, decoratedText, key) => (
+                  <a href={decoratedHref} target='_blank' rel='noopener noreferrer' key={key}>
+                    {decoratedText}
+                  </a>
+                )}
+              >
+                {message.text}
+              </Linkify>
             </div>
           ))}
           {loading ? (

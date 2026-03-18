@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "linkify-it": "^5.0.0",
     "next": "16.1.7",
     "next-i18next": "^15.4.3",
     "react": "19.2.4",
     "react-countup": "6.5.3",
     "react-dom": "19.2.4",
+    "react-linkify": "^1.0.0-alpha",
     "swiper": "12.1.2"
   },
   "devDependencies": {
