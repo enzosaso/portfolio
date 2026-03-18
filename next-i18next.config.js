@@ -1,9 +1,11 @@
 module.exports = {
   i18n: {
     defaultLocale: 'es',
-    locales: ['es', 'en'],
+    locales: ['es', 'en']
   },
   react: {
-    useSuspense: false,
+    useSuspense: false
   },
+  reloadOnPrerender: process.env.NODE_ENV === 'development',
+  localePath: './public/locales'
 }
