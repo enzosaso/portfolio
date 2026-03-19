@@ -140,7 +140,7 @@
           "Sitio web con landing page para taller de estetica vehicular el cual permite agendar turnos a los usuarios y el dueño de negocio tener un dashboard con informacion importante asi como posibilidad de configurar horarios y ver turnos agendados con multiples vistas y posibilidad de realizar acciones."
         ],
         "stack": "NextJS",
-        "category": "Ecommerce",
+        "category": "Website",
         "client": "Nelson de NyG Car Detailing",
         "url": "https://car-detail-xi.vercel.app/",
         "gallery": []
