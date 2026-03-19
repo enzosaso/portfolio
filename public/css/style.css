@@ -29,10 +29,10 @@ a {
 }
 :root {
   --main-color: #12141d;
-  --font-family: "Inter", sans-serif;
-  --font-family-extra: "DM Sans", sans-serif;
-  --font-family-oswald: "Oswald", sans-serif;
-  --font-family-kaushan: "Kaushan Script", cursive;
+  --font-family: 'Inter', sans-serif;
+  --font-family-extra: 'DM Sans', sans-serif;
+  --font-family-oswald: 'Oswald', sans-serif;
+  --font-family-kaushan: 'Kaushan Script', cursive;
 }
 html {
   overflow-x: hidden;
@@ -172,7 +172,7 @@ h6 {
 }
 #preloader:before,
 #preloader:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -199,7 +199,7 @@ h6 {
   transition: all 0.8s ease 0s;
 }
 .loader_line:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 50%;
@@ -215,7 +215,7 @@ h6 {
   animation: lineheight 1000ms ease-in-out 0s forwards;
 }
 .loader_line:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -362,6 +362,35 @@ h6 {
   border-radius: 50px;
   background-color: #f75023;
   padding: 7px 40px !important;
+}
+.mobile_menu .language_switcher_container {
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  text-align: left;
+}
+.mobile_menu .language_switcher_container .language_switcher {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.mobile_menu .language_switcher_container .lang-btn {
+  background: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.mobile_menu .language_switcher_container .lang-btn:hover,
+.mobile_menu .language_switcher_container .lang-btn.active {
+  background-color: var(--main-color);
+  color: #fff;
 }
 .mobile_menu .hamburger-inner,
 .mobile_menu .hamburger-inner:after,
@@ -510,7 +539,7 @@ h6 {
 }
 .hero .short .job:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 80px;
   height: 1px;
   background-color: var(--main-color);
@@ -542,7 +571,7 @@ h6 {
   color: #fdfdfd;
   font-family: var(--font-family-extra);
   font-weight: 700;
-  background-color: #207EDE;
+  background-color: #207ede;
   border-radius: 16px;
   padding: 22px 40px 23px 40px;
   display: inline-block;
@@ -597,7 +626,7 @@ h6 {
   position: relative;
 }
 .line_effect:after {
-  content: "";
+  content: '';
   width: 0;
   height: 1px;
   position: absolute;
@@ -757,7 +786,7 @@ h6 {
   height: auto;
   clear: both;
   float: left;
-  background-color: #207EDE;
+  background-color: #207ede;
   padding: 180px 0px 120px 0px;
   margin-bottom: 120px;
 }
@@ -788,7 +817,7 @@ h6 {
   position: relative;
   margin-right: -30px;
   margin-top: -95px;
-  color: #207EDE;
+  color: #207ede;
   line-height: 1;
 }
 .about .experience {
@@ -802,7 +831,7 @@ h6 {
   justify-content: center;
   width: 100%;
   font-size: 65px;
-  color: #207EDE;
+  color: #207ede;
   font-weight: 700;
   letter-spacing: -4px;
   line-height: 1;
@@ -849,7 +878,7 @@ h6 {
 }
 .main_title h3 span:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 80px;
   height: 1px;
   background-color: #fff;
@@ -1105,7 +1134,7 @@ h6 {
   margin-bottom: 25px;
 }
 .informations .timelinebox .time .year {
-  color: #207EDE;
+  color: #207ede;
   display: block;
   margin-bottom: 2px;
 }
@@ -1122,7 +1151,7 @@ h6 {
 }
 .informations .timelinebox .job span:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 20px;
   height: 1px;
   background-color: var(--main-color);
@@ -1170,7 +1199,7 @@ h6 {
 }
 .counter .counter_list ul li .list_inner:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 64px;
   height: 64px;
   background-color: #4d98e4;
@@ -1228,7 +1257,7 @@ h6 {
   right: 0px;
   position: absolute;
   z-index: 1;
-  background-color: #207EDE;
+  background-color: #207ede;
 
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1267,7 +1296,7 @@ h6 {
 }
 .service .service_list .number {
   display: inline-block;
-  color: #207EDE;
+  color: #207ede;
   font-size: 24px;
   font-family: var(--font-family-extra);
 
@@ -1334,7 +1363,7 @@ h6 {
   fill: #fff;
 }
 .service .service_list ul li.mleave .number {
-  color: #207EDE;
+  color: #207ede;
 }
 .service .service_list ul li.mleave .title {
   color: var(--main-color);
@@ -1434,7 +1463,7 @@ h6 {
 }
 .modalbox .description_wrap:before {
   position: fixed;
-  content: "";
+  content: '';
   top: 0px;
   left: 0px;
   right: 0px;
@@ -1444,7 +1473,7 @@ h6 {
 }
 .modalbox .description_wrap:after {
   position: fixed;
-  content: "";
+  content: '';
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -1607,7 +1636,7 @@ h6 {
 }
 .portfolio .portfolio_list .title span:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 1px;
   background-color: var(--main-color);
@@ -1876,7 +1905,7 @@ h6 {
 }
 .testimonials .details .name span:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 24px;
   height: 1px;
   background-color: var(--main-color);
@@ -1957,7 +1986,7 @@ h6 {
 }
 .news .metabox span:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   border-radius: 100%;
@@ -2106,7 +2135,7 @@ h6 {
 }
 .modalbox .metabox span:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   border-radius: 100%;
@@ -2365,18 +2394,24 @@ h6 {
   width: 6px;
   height: 6px;
   z-index: 100;
-  background-color: #207EDE;
-  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  background-color: #207ede;
+  -webkit-transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  transition:
+    width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    margin 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 .cursor-inner.cursor-hover {
   margin-left: -40px;
   margin-top: -40px;
   width: 80px;
   height: 80px;
-  background-color: #207EDE;
+  background-color: #207ede;
   opacity: 0.3;
 }
 .cursor-outer {
@@ -2384,7 +2419,7 @@ h6 {
   margin-top: -15px;
   width: 30px;
   height: 30px;
-  border: 2px solid #207EDE;
+  border: 2px solid #207ede;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 100;
@@ -2395,7 +2430,7 @@ h6 {
 .cursor-outer.cursor-hover {
   opacity: 0;
 }
-.all_wrap[data-magic-cursor="hide"] .mouse-cursor {
+.all_wrap[data-magic-cursor='hide'] .mouse-cursor {
   display: none;
   opacity: 0;
   visibility: hidden;

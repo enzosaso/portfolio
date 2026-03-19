@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
+import LanguageSwitcher from '../components/LanguageSwitcher'
 
 const MobileMenu = () => {
   const { t } = useTranslation('common')
@@ -42,6 +43,9 @@ const MobileMenu = () => {
               <a href='#contact'>{t('navigation.contact', 'Contacto')}</a>
             </li>
           </ul>
+          <div className='language_switcher_container'>
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </div>
